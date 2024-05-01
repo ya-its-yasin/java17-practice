@@ -1,0 +1,40 @@
+
+we know about what is class and object blaah blah and we have a hand written notes too..
+
+now..
+comments
+// single line comment
+
+/*
+multi line
+comment
+*/
+
+
+/**
+java doc comment
+@author yasin
+*/
+
+1. each file can contain only one public class
+2. filename should match the class name, including case and have a .java extension
+3. if that class is the entry point of the program, it must contain a vvalid main() method
+
+Packages:
+packages are logical grouping of the clases.
+java.lang package is default imported for all java classes.. and thats how we could use System.out in our code without any import statements..
+
+to compilse classes and place in a package structred folders..
+javac -d class ClassA.java ClassB.java ClassC.java
+
+to run the code from the package structure.. 
+java -cp classes packageb.ClassB 
+
+-d  -> directory in which the generated classes need to be placed
+-cp -> location of classes needed to compile the program
+
+to bind a folder full of classes into a jar file..
+jar cf MyApp.jar -C classes .
+
+for running a jar file by providing the main clas name..
+java -cp MyApp.jar packageb/ClassB
